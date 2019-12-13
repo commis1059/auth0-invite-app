@@ -225,3 +225,5 @@ thumb
 sketch
 
 # End of https://www.gitignore.io/api/osx,rails,vue,jetbrains
+
+/.idea/dataSources.xml
