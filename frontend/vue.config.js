@@ -1,7 +1,7 @@
 module.exports = {
   // proxy API requests to Rails during development
   devServer: {
-    proxy: "http://localhost:3000"
+    proxy: "http://web:80"
   },
 
   // output built static files to Rails's public dir.
