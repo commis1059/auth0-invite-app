@@ -4,6 +4,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
 
+      <router-link v-if="$auth.isAuthenticated" to="/external-api">External Api</router-link>
       <router-link v-if="$auth.isAuthenticated" to="/profile"> | Profile</router-link>
 
       <!-- Check that the SDK client is not currently loading before accessing is methods -->

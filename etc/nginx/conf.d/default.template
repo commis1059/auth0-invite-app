@@ -1,5 +1,5 @@
 upstream app {
-  server unix:///root/sockets/puma.sock;
+  server $APP_HOST:$APP_PORT;
 }
 
 server {

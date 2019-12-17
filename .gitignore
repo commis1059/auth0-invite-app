@@ -228,3 +228,5 @@ sketch
 
 /.gem
 /.idea/dataSources.xml
+/etc/nginx/conf.d/default.conf
+/node_modules/

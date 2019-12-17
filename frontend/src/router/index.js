@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import { authGuard } from "../auth/authGuard";
+import ExternalApi from "../views/ExternalApi";
 import Home from "../views/Home.vue";
 import Profile from "../views/Profile.vue";
 
@@ -26,6 +27,12 @@ const routes = [
     path: "/profile",
     name: "profile",
     component: Profile,
+    beforeEnter: authGuard
+  },
+  {
+    path: "/external-api",
+    name: "external-api",
+    component: ExternalApi,
     beforeEnter: authGuard
   }
 ];

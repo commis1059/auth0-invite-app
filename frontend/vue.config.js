@@ -1,7 +1,7 @@
 module.exports = {
   // proxy API requests to Rails during development
   devServer: {
-    proxy: "http://web:80"
+    proxy: `http://localhost:${process.env.VUE_APP_PROXY_PORT}`
   },
 
   // output built static files to Rails's public dir.
