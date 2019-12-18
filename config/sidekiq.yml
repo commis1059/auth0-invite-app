@@ -1,0 +1,9 @@
+:dynamic: true
+:dynamic_every: 5s
+:enabled: true
+:scheduler:
+  :listened_queues_only: false
+:schedule:
+  hard_worker:
+    class: HardWorker
+    cron: "0 * * * * *"

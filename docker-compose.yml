@@ -17,6 +17,11 @@ services:
       - ./etc/mysql/conf.d:/etc/mysql/conf.d
       - db:/var/lib/mysql
 
+  redis:
+    image: redis:5
+    ports:
+      - "${REDIS_PORT}:6379"
+
   web:
     image: nginx:1.17-alpine
     ports:

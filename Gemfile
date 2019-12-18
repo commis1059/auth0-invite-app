@@ -22,6 +22,9 @@ gem 'image_processing', '~> 1.2'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'jwt'
+gem 'redis-namespace'
+gem 'sidekiq'
+gem 'sidekiq-scheduler'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'

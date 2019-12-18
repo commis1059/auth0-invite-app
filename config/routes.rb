@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   scope :api do
     resources :user_import_jobs, only: %i[create]
   end
+
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
 end
