@@ -1,9 +1,17 @@
 <template>
     <div>
-        <button @click="callPublic">Public</button>
-        <button @click="callPrivate">Private</button>
-        <button @click="callScoped">Scoped</button>
-        <p>{{ apiMessage }}</p>
+        <div>
+            <button @click="callPublic">Public</button>
+            <button @click="callPrivate">Private</button>
+            <button @click="callScoped">Scoped</button>
+            <p>{{ apiMessage }}</p>
+        </div>
+        <div>
+            <form method="post" action="api/user_import_jobs" enctype="multipart/form-data">
+                <input type="file" name="user_import_job[form]" />
+                <button>Send</button>
+            </form>
+        </div>
     </div>
 </template>
 
