@@ -4,6 +4,10 @@
 :scheduler:
   :listened_queues_only: false
 :schedule:
-  hard_worker:
-    class: HardWorker
+  user_import_worker:
+    class: UserImportWorker
     cron: "0 * * * * *"
+
+  auth0_job_status_update_worker:
+    class: Auth0JobStatusUpdateWorker
+    cron: "5 */2 * * * *"

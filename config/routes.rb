@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'api/private' => 'private#private'
   get 'api/private-scoped' => 'private#private_scoped'
 
-  scope :api do
+  namespace :api do
     resources :user_import_jobs, only: %i[create]
   end
 
